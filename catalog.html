@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
@@ -45,6 +45,7 @@
   </header>
 
   <main class="main-inner">
+    <div class="filter-wrapper">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -117,17 +118,16 @@
         <!-- Блок "Стоимость, ₽:"" пока так) -->
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <label>
-            <input type="text" placeholder="от">
-            <input type="text" placeholder="до">
-            <input type="range" min="0" max="100" step="1" value="50">
-          </label>
+          <label>от<input type="text" value="0"></label>
+          <label>до<input type="text" value="9000"></label>
+          <input type="range" min="0" max="100" step="1" value="50">
         </fieldset>
 
-        <button class="button" type="reset">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
+        <button class="button button-use" type="reset">Применить</button>
+        <button class="button button-reset" type="reset">Сбросить</button>
       </form>
     </section>
+  </div>
 
     <section class="catalog-products-cards">
       <p class="hotel-amount">Найдено гостиниц: 38</p>
@@ -136,13 +136,13 @@
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
-      <a class="button" href="#">
+      <a class="button-sorting" href="#">
         <span class="visually-hidden">Показать мелкие карточки в виде таблицы</span>
       </a>
-      <a class="button" href="#">
+      <a class="button-sorting" href="#">
         <span class="visually-hidden">Показать крупные карточки</span>
       </a>
-      <a class="button" href="#">
+      <a class="button-sorting" href="#">
         <span class="visually-hidden">Показать карточки списком</span>
       </a>
 
@@ -155,7 +155,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 4000 ₽</p>
           <a class="hotel-card-btn-more button" href="#">подробнее</a>
-          <button class="hotel-card-btn-favourite" type="button">в избранное</button>
+          <button class="button hotel-card-btn-favourite" type="button">в избранное</button>
           <img class="hotel-card-stars-img" src="images/catalog/4-stars.svg" width="140" height="37" alt="четыре звезды">
           <p class="hotel-card-rating">Рейтинг: 8,5</p>
         </li>
@@ -168,7 +168,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 5000 ₽</p>
           <a class="hotel-card-btn-more button" href="#">подробнее</a>
-          <button class="hotel-card-btn-favourite" type="button">в избранном</button>
+          <button class="button hotel-card-btn-favourite selected" type="button">в избранном</button>
           <img class="hotel-card-stars-img" src="images/catalog/4-stars.svg" width="140" height="37" alt="четыре звезды">
           <p class="hotel-card-rating">Рейтинг: 9,2</p>
         </li>
@@ -181,7 +181,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 2500 ₽</p>
           <a class="hotel-card-btn-more button" href="#">подробнее</a>
-          <button class="hotel-card-btn-favourite" type="button">в избранное</button>
+          <button class="button hotel-card-btn-favourite" type="button">в избранное</button>
           <img class="hotel-card-stars-img" src="images/catalog/3-stars.svg" width="140" height="37" alt="три звезды">
           <p class="hotel-card-rating">Рейтинг: 6,9</p>
         </li>
@@ -194,7 +194,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 1500 ₽</p>
           <a class="hotel-card-btn-more button" href="#">подробнее</a>
-          <button class="hotel-card-btn-favourite" type="button">в избранное</button>
+          <button class="button hotel-card-btn-favourite" type="button">в избранное</button>
           <img class="hotel-card-stars-img" src="images/catalog/2-stars.svg" width="140" height="37" alt="две звезды">
           <p class="hotel-card-rating">Рейтинг: 5,0</p>
         </li>
@@ -214,7 +214,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li>
-          <a class="pagination-link" href="#">&period;&period;&period;</a>
+          <a class="pagination-link pagination-link-more" href="#">&period;&period;&period;</a>
         </li>
         <li>
           <a class="pagination-link" href="#">10</a>
@@ -222,14 +222,14 @@
       </ul>
     </section>
 
-    <section class="newsletter">
-      <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
-      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="newsletter newsletter-catalog">
+      <h3 class="newsletter-title newsletter-title-catalog">Подпишитесь на рассылку</h3>
+      <p class="newsletter-description newsletter-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" >
         <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+        <input class="field field-catalog" placeholder="Ваш e-mail" type="email" name="newsletter-email"
         id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">Подписаться</button>
+        <button class="newsletter-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
