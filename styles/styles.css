@@ -426,6 +426,7 @@ body {
   border-radius: 0 4px 4px 0;
   border: none;
   padding: 8px 50px;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -589,14 +590,14 @@ body {
 }
 
 .catalog-filter-title {
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-padding: 0;
-margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0;
+  margin-bottom: 32px;
 
-text-transform: capitalize;
-color: #FFFFFF;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
 .catalog-filter {
   display: flex;
@@ -757,6 +758,7 @@ color: #FFFFFF;
   position: absolute;
   width: 20px;
   height: 20px;
+  margin: 0;
   background-color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -796,6 +798,7 @@ color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 50px;
+  margin: 0;
 
   text-transform: uppercase;
   color: #FFFFFF;
@@ -972,7 +975,7 @@ color: #FFFFFF;
   background: #82B3D3;
   border-radius: 4px;
   border: none;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 .hotel-card-btn-selected {
   background-color: #7DB54F;
@@ -1080,7 +1083,7 @@ color: #FFFFFF;
 
 .button-state-blue:hover,
 .button-state-blue:focus {
-background-color: #68A2CA;
+  background-color: #68A2CA;
 }
 .button-state-blue:active {
   background-color: #82B3D3;
@@ -1151,6 +1154,7 @@ background-color: #68A2CA;
   background-color: #F2F2F2;
   border: none;
   padding: 16px;
+  margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1278,6 +1282,7 @@ background-color: #68A2CA;
   border: none;
   background-color: #F2F2F2;
   padding: 0;
+  margin: 0;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1341,6 +1346,7 @@ background-color: #68A2CA;
   background-color: #83B3D3;
   border-radius: 50%;
   padding: 0;
+  margin: 0;
   border: 0;
   background-image: url("../images/tooltip-icon.svg");
   background-repeat: no-repeat;
