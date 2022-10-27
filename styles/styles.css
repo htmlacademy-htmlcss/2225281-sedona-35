@@ -81,6 +81,7 @@ body {
 .page-header-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
   max-width: 313px;
   margin: 0;
@@ -146,6 +147,7 @@ body {
   color: #FFFFFF;
 
   padding: 8px 34px;
+  min-width: 90px;
 
   background-color: #756157;
   border-radius: 4px;
@@ -178,7 +180,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  bottom: 0;
+  bottom: -2px;
   right: 0;
   content: "";
 }
@@ -696,7 +698,7 @@ body {
   color: #000000;
   background-color: #F2F2F2;
   border: none;
-  padding: 12px 37px 12px 20px;
+  padding: 12px 41px 12px 20px;
   width: 143px;
   box-sizing: border-box;
   appearance: textfield;
@@ -750,8 +752,8 @@ body {
   position: absolute;
   height: 4px;
   background-color: #FFFFFF;
-  right: 60px;
-  width: 226px;
+  right: 63px;
+  width: 223px;
 }
 
 .range-toggle {
@@ -783,7 +785,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: 0;
 }
 
 
@@ -808,6 +810,7 @@ body {
 }
 
 .button-use {
+  min-width: 190px;
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
@@ -815,6 +818,7 @@ body {
 }
 
 .button-reset {
+  min-width: 190px;
   border-radius: 4px;
   border: none;
   background: none;
@@ -877,9 +881,11 @@ body {
 
 .button-toggle-container {
   min-width: 160px;
+  max-width: 230px;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .button-sorting {
@@ -961,23 +967,26 @@ body {
   width: 300px;
 }
 
-.hotel-card-btn-more {
+.hotel-button-more {
   padding: 8px 26px;
+  min-width: 140px;
+  box-sizing: border-box;
 
   background-color: #756157;
   border-radius: 4px;
   margin-bottom: 16px;
 }
 
-.hotel-card-btn-favourite {
+.hotel-button-favourite {
   padding: 8px 20px;
-
+  min-width: 140px;
+  box-sizing: border-box;
   background: #82B3D3;
   border-radius: 4px;
   border: none;
   margin: 0 0 16px 0;
 }
-.hotel-card-btn-selected {
+.hotel-button-selected {
   background-color: #7DB54F;
   padding: 8px 18px;
 }
@@ -1093,15 +1102,15 @@ body {
   background-color: #E5E5E5;
 }
 
-.hotel-card-btn-selected:hover,
-.hotel-card-btn-selected:focus {
+.hotel-button-selected:hover,
+.hotel-button-selected:focus {
   background-color: #6C9E42;
 }
-.hotel-card-btn-selected:active {
+.hotel-button-selected:active {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
 }
-.hotel-card-btn-selected:disabled {
+.hotel-button-selected:disabled {
   background-color: #E5E5E5;
 }
 
@@ -1128,11 +1137,12 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 .modal {
   position: relative;
   margin: auto;
