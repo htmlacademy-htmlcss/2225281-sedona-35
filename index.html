@@ -153,6 +153,7 @@
                       2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15
                       0 0 3.2-4.42 3.54-5.93Z" fill="#83B3D3"/>
                 </svg>
+                <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -162,6 +163,7 @@
                   6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"
                     fill="#83B3D3"/>
                 </svg>
+                <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -171,6 +173,7 @@
                   3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
                     fill="#83B3D3"/>
                 </svg>
+                <span class="visually-hidden">Youtube.</span>
               </a>
             </li>
           </ul>
@@ -215,16 +218,16 @@
           </button>
 
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="input-description ckeck-in-date">Дата заезда:
+            <label class="input-description ckeck-date">Дата заезда:
               <input class="modal-form-input modal-date-input" type="text"
-               name="modal-ckeck-in" placeholder="27 апреля 2020">
+               name="modal-ckeck-in" placeholder="27 апреля 2020" required>
             </label>
             <p class="input-subtitle input-subtitle-mistake">
               Мы не можем отправить вас в прошлое.
             </p>
-            <label class="input-description ckeck-out-date">Дата выезда:
+            <label class="input-description ckeck-date">Дата выезда:
               <input class="modal-form-input modal-date-input" type="text"
-               name="modal-ckeck-out" placeholder="1 сентября 2023">
+               name="modal-ckeck-out" placeholder="1 сентября 2023" required>
             </label>
             <p class="input-subtitle">
               На эти даты есть свободные номера. Пока есть.
@@ -233,36 +236,40 @@
             <div class="modal-input-wrapper">
               <div class="modal-input-container input-adult-container">
                 <label class="input-description input-description-amount" for="modal-adult">Взрослые:</label>
-                <button class="modal-toggle modal-toggle-minus" type="button">
-                  <span class="visually-hidden">Уменьшить колиство.</span>
-                  <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
-                </button>
-                <input class="modal-form-input modal-amount-input" type="number"
-                  name="modal-adult" id="modal-adult" value="2">
-                <button class="modal-toggle modal-toggle-plus" type="button">
-                  <span class="visually-hidden">Увеличить колиство.</span>
-                  <svg class="plus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
-                </button>
+                <div class="modal-button-group">
+                  <button class="modal-toggle modal-toggle-minus" type="button">
+                    <span class="visually-hidden">Уменьшить колиство.</span>
+                    <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
+                  </button>
+                  <input class="modal-form-input modal-amount-input" type="number"
+                    name="modal-adult" id="modal-adult" value="2">
+                  <button class="modal-toggle modal-toggle-plus" type="button">
+                    <span class="visually-hidden">Увеличить колиство.</span>
+                    <svg class="plus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
+                  </button>
+              </div>
               </div>
 
               <div class="modal-input-container input-children-container">
                 <div class="input-description input-description-amount tooltip-wrapper">
-                  <label class="input-description input-description-amount" for="modal-children">Дети:</label>
+                  <label class="input-description input-description-amount input-amount-children" for="modal-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </div>
-                <button class="modal-toggle modal-toggle-minus" type="button">
-                  <span class="visually-hidden">Уменьшить колиство.</span>
-                  <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
-                </button>
-                <input class="modal-form-input modal-amount-input" type="number"
-                  name="modal-children" id="modal-childrent" value="2">
-                <button class="modal-toggle modal-toggle-plus" type="button">
-                  <span class="visually-hidden">Увеличить колиство.</span>
-                  <svg class="plus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
-                </button>
+                <div class="modal-button-group">
+                  <button class="modal-toggle modal-toggle-minus" type="button">
+                    <span class="visually-hidden">Уменьшить колиство.</span>
+                    <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
+                  </button>
+                  <input class="modal-form-input modal-amount-input" type="number"
+                    name="modal-children" id="modal-children" value="2">
+                  <button class="modal-toggle modal-toggle-plus" type="button">
+                    <span class="visually-hidden">Увеличить колиство.</span>
+                    <svg class="plus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
+                  </button>
+                </div>
               </div>
             </div>
 
