@@ -68,6 +68,15 @@ body {
   z-index: 1;
 }
 
+.header-logo:hover,
+.header-logo:focus {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.8;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +109,15 @@ body {
   text-decoration: none;
   text-align: center;
   padding: 19px 16px;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  opacity: 0.8;
 }
 
 .navigation-link-current::before {
@@ -137,6 +155,14 @@ body {
   margin-right: 20px;
 }
 
+.header-icon-state:hover,
+.header-icon-state:focus {
+  opacity: 0.6;
+}
+
+.header-icon-state:active {
+  opacity: 0.8;
+}
 .buttons-basic {
   font-family: inherit;
   font-weight: 700;
@@ -754,6 +780,7 @@ body {
 }
 
 .range-input:active {
+  background-color: #f2f2f2;
   outline: 2px solid #000000;
 }
 
@@ -1138,7 +1165,6 @@ body {
   background-color: #e5e5e5;
 }
 
-
 .button-state-blue:hover,
 .button-state-blue:focus {
   background-color: #68a2ca;
@@ -1302,14 +1328,29 @@ body {
 
 .modal-date-input:hover {
   background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-date-input::placeholder:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-date-input:focus {
+  background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
 
+.modal-date-input::placeholder:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .modal-date-input:active {
+  background-color: #f2f2f2;
   outline: 2px solid #000000;
+}
+
+.modal-date-input::placeholder:active {
+  color: #000000;
 }
 
 .input-subtitle {
