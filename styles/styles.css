@@ -777,7 +777,7 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
   padding: 12px 41px 12px 20px;
   width: 143px;
   box-sizing: border-box;
@@ -812,7 +812,7 @@ body {
 
 .range-input:active {
   background-color: #f2f2f2;
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
 }
 
 .range-input-text {
@@ -1350,7 +1350,7 @@ body {
 }
 
 .modal-date-input::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -1359,20 +1359,11 @@ body {
 
 .modal-date-input:hover {
   background-color: #e6e6e6;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.modal-date-input::placeholder:hover {
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-date-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
-}
-
-.modal-date-input::placeholder:focus {
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-date-input:active {
